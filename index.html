@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SuperGrok</title>
+    <title>AJ STUDIOZ Pricing</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -12,7 +12,6 @@
         background-color: #000000;
         color: white;
       }
-      /* Custom scrollbar for better aesthetics */
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -27,14 +26,11 @@
         background: #3f3f46;
       }
       
-      /* Background Stars Animation */
       @keyframes drift {
         from {
           background-position: 0 0, 40px 60px, 130px 270px;
         }
         to {
-          /* Move the background diagonally to create a floating effect. 
-             Values are multiples of background-sizes (550, 350, 250) to ensure seamless looping */
           background-position: 550px 550px, 740px 760px, 1130px 1270px; 
         }
       }
@@ -50,7 +46,6 @@
         animation: drift 100s linear infinite;
       }
 
-      /* Slot Machine / Spinning Text Animation */
       @keyframes slotSpin {
         0% {
           transform: translateY(100%) rotateX(-90deg);
@@ -78,18 +73,9 @@
         to { opacity: 1; }
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3"
-  }
-}
-</script>
-</head>
+  </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
